@@ -149,7 +149,6 @@
             this.label6.Size = new System.Drawing.Size(462, 31);
             this.label6.TabIndex = 52;
             this.label6.Text = "\tЕлектротехніка та електромеханіка";
-   
             // 
             // label5
             // 
@@ -245,6 +244,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "thirdSemester";
             this.Text = "thirdSemester";
+            this.Load += new System.EventHandler(this.thirdSemester_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
