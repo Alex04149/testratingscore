@@ -11,7 +11,12 @@ namespace testratingscore
             InitializeComponent();
         }
 
-        private void Get_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Get_Click_1(object sender, EventArgs e)
         {
             List<Subject> subjects = Subject.getSubject(1);
             subjects[0].Score = int.Parse(higherMath.Text);
@@ -24,16 +29,13 @@ namespace testratingscore
             subjects[7].Score = int.Parse(pe.Text);
             double rating = Subject.Calc(subjects);
             MessageBox.Show("Ваш рейтинговий бал " + rating);
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 TEST = new Form1();
-            TEST.Show();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
-
-        
     }
 }

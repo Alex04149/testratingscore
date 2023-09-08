@@ -19,30 +19,23 @@ namespace testratingscore
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void firstSemester_Click(object sender, EventArgs e)
+        
+        private void firstSemester_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            firstSemester firstSemester = new firstSemester();       
-            firstSemester.Show(); 
+            firstSemester firstSemester = new firstSemester();
+            firstSemester.Show();
         }
-        private void secondSemester_Click(object sender, EventArgs e)
+
+        private void secondSemester_Click_1(object sender, EventArgs e)
         {
+
             this.Hide();
             secondSemester secondSemester = new secondSemester();
-            secondSemester.Show();  
+            secondSemester.Show();
         }
 
-        private void sixSemester_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void thirdSemester_Click(object sender, EventArgs e)
+        private void thirdSemester_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             thirdSemester thirdSemester = new thirdSemester();

@@ -16,17 +16,9 @@ namespace testratingscore
         {
             InitializeComponent();
         }
-
-    
-        private void button1_Click(object sender, EventArgs e)
+        private void Get_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 form = new Form1();
-            form.Show();
-        }
 
-        private void Get_Click_1(object sender, EventArgs e)
-        {
             List<Subject> subjects = Subject.getSubject(2);
             subjects[0].Score = int.Parse(higherMath.Text);
             subjects[1].Score = int.Parse(physiks.Text);
