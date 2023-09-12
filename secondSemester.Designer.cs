@@ -57,7 +57,6 @@
             this.eco.Name = "eco";
             this.eco.Size = new System.Drawing.Size(248, 20);
             this.eco.TabIndex = 66;
-            this.eco.TextChanged += new System.EventHandler(this.eco_TextChanged);
             this.eco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // TheoryOfDigitalAutomata
@@ -254,7 +253,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "secondSemester";
             this.Text = "secondSemester";
-            this.Load += new System.EventHandler(this.secondSemester_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

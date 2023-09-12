@@ -20,7 +20,7 @@ namespace testratingscore
         
         private void Get_Click(object sender, EventArgs e)
         {
-
+            try { 
             List<Subject> subjects = Subject.getSubject(2);
             subjects[0].Score = int.Parse(higherMath.Text);
             subjects[1].Score = int.Parse(electtricalEngineering.Text);
@@ -32,6 +32,8 @@ namespace testratingscore
             subjects[7].Score = int.Parse(pe.Text);
             double rating = Subject.Calc(subjects);
             MessageBox.Show("Ваш рейтинговий бал = " + rating);
+            }
+            catch { MessageBox.Show("Введіть коректні значення"); }
         }
 
         private void button1_Click(object sender, EventArgs e)

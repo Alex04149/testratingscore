@@ -109,18 +109,19 @@ namespace testratingscore
             }
         static public double Calc(List<Subject> subjects)
         {
-            int sumScoreAndCoefficient = 0;
-            int sumCoefficient = 0;
-            double rating;
-            for (int i = 0; i < subjects.Count; i++)
-            {
-                int temp;
-                temp = subjects[i].Score * subjects[i].Coefficient;
-                sumScoreAndCoefficient += temp;
-                sumCoefficient += subjects[i].Coefficient;
-            }
-            rating = (Subject.maxAssessmentOfDiscipline * sumScoreAndCoefficient) / (sumCoefficient * Subject.maxAssessmentOfRating);
-            return rating;
+                int sumScoreAndCoefficient = 0;
+                int sumCoefficient = 0;
+                double rating;
+                for (int i = 0; i < subjects.Count; i++)
+                {
+                    int temp;
+                    temp = subjects[i].Score * subjects[i].Coefficient;
+                    sumScoreAndCoefficient += temp;
+                    sumCoefficient += subjects[i].Coefficient;
+                }
+                rating = (Subject.maxAssessmentOfDiscipline * sumScoreAndCoefficient) / (sumCoefficient * Subject.maxAssessmentOfRating);
+                return rating;
+       
         }
         }
     }
