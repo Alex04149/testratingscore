@@ -36,8 +36,8 @@
             this.english = new System.Windows.Forms.TextBox();
             this.pe = new System.Windows.Forms.TextBox();
             this.informaticks = new System.Windows.Forms.TextBox();
+            this.phisics = new System.Windows.Forms.TextBox();
             this.higherMath = new System.Windows.Forms.TextBox();
-            this.physiks = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,6 +57,8 @@
             this.eco.Name = "eco";
             this.eco.Size = new System.Drawing.Size(248, 20);
             this.eco.TabIndex = 66;
+            this.eco.TextChanged += new System.EventHandler(this.eco_TextChanged);
+            this.eco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // TheoryOfDigitalAutomata
             // 
@@ -64,6 +66,7 @@
             this.TheoryOfDigitalAutomata.Name = "TheoryOfDigitalAutomata";
             this.TheoryOfDigitalAutomata.Size = new System.Drawing.Size(248, 20);
             this.TheoryOfDigitalAutomata.TabIndex = 65;
+            this.TheoryOfDigitalAutomata.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // history
             // 
@@ -71,6 +74,8 @@
             this.history.Name = "history";
             this.history.Size = new System.Drawing.Size(248, 20);
             this.history.TabIndex = 62;
+            this.history.TextChanged += new System.EventHandler(this.history_TextChanged);
+            this.history.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // label8
             // 
@@ -88,6 +93,7 @@
             this.english.Name = "english";
             this.english.Size = new System.Drawing.Size(248, 20);
             this.english.TabIndex = 60;
+            this.english.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // pe
             // 
@@ -95,6 +101,7 @@
             this.pe.Name = "pe";
             this.pe.Size = new System.Drawing.Size(248, 20);
             this.pe.TabIndex = 59;
+            this.pe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // informaticks
             // 
@@ -102,20 +109,23 @@
             this.informaticks.Name = "informaticks";
             this.informaticks.Size = new System.Drawing.Size(248, 20);
             this.informaticks.TabIndex = 58;
+            this.informaticks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            // 
+            // phisics
+            // 
+            this.phisics.Location = new System.Drawing.Point(455, 96);
+            this.phisics.Name = "phisics";
+            this.phisics.Size = new System.Drawing.Size(248, 20);
+            this.phisics.TabIndex = 57;
+            this.phisics.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // higherMath
             // 
             this.higherMath.Location = new System.Drawing.Point(455, 48);
             this.higherMath.Name = "higherMath";
             this.higherMath.Size = new System.Drawing.Size(248, 20);
-            this.higherMath.TabIndex = 57;
-            // 
-            // physiks
-            // 
-            this.physiks.Location = new System.Drawing.Point(455, 97);
-            this.physiks.Name = "physiks";
-            this.physiks.Size = new System.Drawing.Size(248, 20);
-            this.physiks.TabIndex = 56;
+            this.higherMath.TabIndex = 56;
+            this.higherMath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
             // 
             // label7
             // 
@@ -216,6 +226,7 @@
             this.button1.TabIndex = 67;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // secondSemester
             // 
@@ -231,8 +242,8 @@
             this.Controls.Add(this.english);
             this.Controls.Add(this.pe);
             this.Controls.Add(this.informaticks);
+            this.Controls.Add(this.phisics);
             this.Controls.Add(this.higherMath);
-            this.Controls.Add(this.physiks);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -243,6 +254,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "secondSemester";
             this.Text = "secondSemester";
+            this.Load += new System.EventHandler(this.secondSemester_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,8 +270,8 @@
         private System.Windows.Forms.TextBox english;
         private System.Windows.Forms.TextBox pe;
         private System.Windows.Forms.TextBox informaticks;
+        private System.Windows.Forms.TextBox phisics;
         private System.Windows.Forms.TextBox higherMath;
-        private System.Windows.Forms.TextBox physiks;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

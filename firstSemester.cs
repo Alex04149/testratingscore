@@ -8,6 +8,7 @@ namespace testratingscore
     {
         public firstSemester()
         {
+            this.ActiveControl = physiks; 
             InitializeComponent();
         }
 
@@ -19,7 +20,7 @@ namespace testratingscore
         private void Get_Click_1(object sender, EventArgs e)
         {
             List<Subject> subjects = Subject.getSubject(1);
-            subjects[0].Score = int.Parse(higherMath.Text);
+            subjects[0].Score = int.Parse(physiks.Text);
             subjects[1].Score = int.Parse(physiks.Text);
             subjects[2].Score = int.Parse(informaticks.Text);
             subjects[3].Score = int.Parse(graficks.Text);
@@ -36,6 +37,14 @@ namespace testratingscore
             this.Hide();
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void highertMath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

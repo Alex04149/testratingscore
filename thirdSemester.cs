@@ -40,5 +40,13 @@ namespace testratingscore
              Form1 form1 = new Form1();
              form1.Show();
         }
+
+        private void higherMath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -50,10 +50,11 @@
             // 
             // electtricalEngineering
             // 
-            this.electtricalEngineering.Location = new System.Drawing.Point(516, 102);
+            this.electtricalEngineering.Location = new System.Drawing.Point(516, 103);
             this.electtricalEngineering.Name = "electtricalEngineering";
             this.electtricalEngineering.Size = new System.Drawing.Size(248, 20);
             this.electtricalEngineering.TabIndex = 83;
+            this.electtricalEngineering.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // Get
             // 
@@ -66,10 +67,11 @@
             // 
             // mechanics
             // 
-            this.mechanics.Location = new System.Drawing.Point(507, 413);
+            this.mechanics.Location = new System.Drawing.Point(516, 414);
             this.mechanics.Name = "mechanics";
             this.mechanics.Size = new System.Drawing.Size(248, 20);
             this.mechanics.TabIndex = 81;
+            this.mechanics.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // label8
             // 
@@ -87,6 +89,7 @@
             this.english.Name = "english";
             this.english.Size = new System.Drawing.Size(248, 20);
             this.english.TabIndex = 79;
+            this.english.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // pe
             // 
@@ -94,6 +97,7 @@
             this.pe.Name = "pe";
             this.pe.Size = new System.Drawing.Size(248, 20);
             this.pe.TabIndex = 78;
+            this.pe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // philosophy
             // 
@@ -101,6 +105,7 @@
             this.philosophy.Name = "philosophy";
             this.philosophy.Size = new System.Drawing.Size(248, 20);
             this.philosophy.TabIndex = 77;
+            this.philosophy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // programming
             // 
@@ -108,6 +113,7 @@
             this.programming.Name = "programming";
             this.programming.Size = new System.Drawing.Size(248, 20);
             this.programming.TabIndex = 76;
+            this.programming.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // physics
             // 
@@ -115,6 +121,7 @@
             this.physics.Name = "physics";
             this.physics.Size = new System.Drawing.Size(248, 20);
             this.physics.TabIndex = 75;
+            this.physics.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // higherMath
             // 
@@ -122,6 +129,7 @@
             this.higherMath.Name = "higherMath";
             this.higherMath.Size = new System.Drawing.Size(248, 20);
             this.higherMath.TabIndex = 74;
+            this.higherMath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // label7
             // 
@@ -157,7 +165,7 @@
             // 
             this.TZA.AutoSize = true;
             this.TZA.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TZA.Location = new System.Drawing.Point(32, 184);
+            this.TZA.Location = new System.Drawing.Point(32, 196);
             this.TZA.Name = "TZA";
             this.TZA.Size = new System.Drawing.Size(211, 31);
             this.TZA.TabIndex = 70;

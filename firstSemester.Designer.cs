@@ -37,7 +37,6 @@
             this.graficks = new System.Windows.Forms.TextBox();
             this.vstup = new System.Windows.Forms.TextBox();
             this.informaticks = new System.Windows.Forms.TextBox();
-            this.higherMath = new System.Windows.Forms.TextBox();
             this.physiks = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.highertMath = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -64,6 +64,7 @@
             this.mova.Name = "mova";
             this.mova.Size = new System.Drawing.Size(248, 20);
             this.mova.TabIndex = 44;
+            this.mova.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // label8
             // 
@@ -91,6 +92,7 @@
             this.english.Name = "english";
             this.english.Size = new System.Drawing.Size(248, 20);
             this.english.TabIndex = 41;
+            this.english.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // pe
             // 
@@ -98,6 +100,7 @@
             this.pe.Name = "pe";
             this.pe.Size = new System.Drawing.Size(248, 20);
             this.pe.TabIndex = 40;
+            this.pe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // graficks
             // 
@@ -105,6 +108,7 @@
             this.graficks.Name = "graficks";
             this.graficks.Size = new System.Drawing.Size(248, 20);
             this.graficks.TabIndex = 39;
+            this.graficks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // vstup
             // 
@@ -112,6 +116,7 @@
             this.vstup.Name = "vstup";
             this.vstup.Size = new System.Drawing.Size(248, 20);
             this.vstup.TabIndex = 38;
+            this.vstup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // informaticks
             // 
@@ -119,20 +124,15 @@
             this.informaticks.Name = "informaticks";
             this.informaticks.Size = new System.Drawing.Size(248, 20);
             this.informaticks.TabIndex = 37;
-            // 
-            // higherMath
-            // 
-            this.higherMath.Location = new System.Drawing.Point(426, 56);
-            this.higherMath.Name = "higherMath";
-            this.higherMath.Size = new System.Drawing.Size(248, 20);
-            this.higherMath.TabIndex = 36;
+            this.informaticks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // physiks
             // 
-            this.physiks.Location = new System.Drawing.Point(426, 100);
+            this.physiks.Location = new System.Drawing.Point(426, 99);
             this.physiks.Name = "physiks";
             this.physiks.Size = new System.Drawing.Size(248, 20);
-            this.physiks.TabIndex = 35;
+            this.physiks.TabIndex = 36;
+            this.physiks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
             // 
             // label7
             // 
@@ -214,6 +214,14 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // highertMath
+            // 
+            this.highertMath.Location = new System.Drawing.Point(426, 55);
+            this.highertMath.Name = "highertMath";
+            this.highertMath.Size = new System.Drawing.Size(248, 20);
+            this.highertMath.TabIndex = 35;
+            this.highertMath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.highertMath_KeyPress);
+            // 
             // firstSemester
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,8 +237,8 @@
             this.Controls.Add(this.graficks);
             this.Controls.Add(this.vstup);
             this.Controls.Add(this.informaticks);
-            this.Controls.Add(this.higherMath);
             this.Controls.Add(this.physiks);
+            this.Controls.Add(this.highertMath);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -256,7 +264,6 @@
         private System.Windows.Forms.TextBox graficks;
         private System.Windows.Forms.TextBox vstup;
         private System.Windows.Forms.TextBox informaticks;
-        private System.Windows.Forms.TextBox higherMath;
         private System.Windows.Forms.TextBox physiks;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -266,5 +273,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox highertMath;
     }
 }
