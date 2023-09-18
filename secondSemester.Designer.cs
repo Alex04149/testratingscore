@@ -57,7 +57,7 @@
             this.eco.Name = "eco";
             this.eco.Size = new System.Drawing.Size(248, 20);
             this.eco.TabIndex = 66;
-            this.eco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.eco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // TheoryOfDigitalAutomata
             // 
@@ -65,7 +65,7 @@
             this.TheoryOfDigitalAutomata.Name = "TheoryOfDigitalAutomata";
             this.TheoryOfDigitalAutomata.Size = new System.Drawing.Size(248, 20);
             this.TheoryOfDigitalAutomata.TabIndex = 65;
-            this.TheoryOfDigitalAutomata.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.TheoryOfDigitalAutomata.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // history
             // 
@@ -73,8 +73,7 @@
             this.history.Name = "history";
             this.history.Size = new System.Drawing.Size(248, 20);
             this.history.TabIndex = 62;
-            this.history.TextChanged += new System.EventHandler(this.history_TextChanged);
-            this.history.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.history.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // label8
             // 
@@ -92,7 +91,7 @@
             this.english.Name = "english";
             this.english.Size = new System.Drawing.Size(248, 20);
             this.english.TabIndex = 60;
-            this.english.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.english.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // pe
             // 
@@ -100,7 +99,7 @@
             this.pe.Name = "pe";
             this.pe.Size = new System.Drawing.Size(248, 20);
             this.pe.TabIndex = 59;
-            this.pe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.pe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // informaticks
             // 
@@ -108,7 +107,7 @@
             this.informaticks.Name = "informaticks";
             this.informaticks.Size = new System.Drawing.Size(248, 20);
             this.informaticks.TabIndex = 58;
-            this.informaticks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.informaticks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // phisics
             // 
@@ -116,7 +115,7 @@
             this.phisics.Name = "phisics";
             this.phisics.Size = new System.Drawing.Size(248, 20);
             this.phisics.TabIndex = 57;
-            this.phisics.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.phisics.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // higherMath
             // 
@@ -124,7 +123,7 @@
             this.higherMath.Name = "higherMath";
             this.higherMath.Size = new System.Drawing.Size(248, 20);
             this.higherMath.TabIndex = 56;
-            this.higherMath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_KeyPress);
+            this.higherMath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // label7
             // 

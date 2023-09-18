@@ -64,6 +64,7 @@
             this.Get.TabIndex = 82;
             this.Get.Text = "Розрахувати";
             this.Get.UseVisualStyleBackColor = true;
+            this.Get.Click += new System.EventHandler(this.Get_Click_1);
             // 
             // mechanics
             // 

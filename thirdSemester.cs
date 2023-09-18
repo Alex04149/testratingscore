@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace testratingscore
@@ -18,36 +11,44 @@ namespace testratingscore
             InitializeComponent();
         }
         
-        private void Get_Click(object sender, EventArgs e)
-        {
-            try { 
-            List<Subject> subjects = Subject.getSubject(2);
-            subjects[0].Score = int.Parse(higherMath.Text);
-            subjects[1].Score = int.Parse(electtricalEngineering.Text);
-            subjects[2].Score = int.Parse(physics.Text);
-            subjects[3].Score = int.Parse(philosophy.Text);
-            subjects[4].Score = int.Parse(programming.Text);
-            subjects[5].Score = int.Parse(english.Text);
-            subjects[6].Score = int.Parse(mechanics.Text);
-            subjects[7].Score = int.Parse(pe.Text);
-            double rating = Subject.Calc(subjects);
-            MessageBox.Show("Ваш рейтинговий бал = " + rating);
-            }
-            catch { MessageBox.Show("Введіть коректні значення"); }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
              this.Hide();
-             Form1 form1 = new Form1();
+             main form1 = new main();
              form1.Show();
         }
 
         private void higherMath_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar))
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8 && number != 44)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void Get_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Subject> subjects = Subject.getSubject(3);
+                subjects[0].Score = int.Parse(higherMath.Text);
+                subjects[1].Score = int.Parse(electtricalEngineering.Text);
+                subjects[2].Score = int.Parse(physics.Text);
+                subjects[3].Score = int.Parse(philosophy.Text);
+                subjects[4].Score = int.Parse(programming.Text);
+                subjects[5].Score = int.Parse(english.Text);
+                subjects[6].Score = int.Parse(mechanics.Text);
+                subjects[7].Score = int.Parse(pe.Text);
+                if (Subject.check(subjects))
+                {
+                    double rating = Subject.Calc(subjects);
+                    MessageBox.Show("Ваш рейтинговий бал у діапазоні (0-90)  = " + rating);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Заповніть усі поля");
             }
         }
     }

@@ -30,16 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.sevenSemester = new System.Windows.Forms.Button();
-            this.eightSemester = new System.Windows.Forms.Button();
-            this.secondSemester = new System.Windows.Forms.Button();
-            this.thirdSemester = new System.Windows.Forms.Button();
-            this.fourSemester = new System.Windows.Forms.Button();
-            this.fiveSemester = new System.Windows.Forms.Button();
-            this.sixSemester = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.firstSemester = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,143 +44,21 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(207, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(326, 29);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Для 151(174) спеціальності";
-            // 
-            // sevenSemester
-            // 
-            this.sevenSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.sevenSemester.Location = new System.Drawing.Point(67, 440);
-            this.sevenSemester.Name = "sevenSemester";
-            this.sevenSemester.Size = new System.Drawing.Size(231, 64);
-            this.sevenSemester.TabIndex = 19;
-            this.sevenSemester.Text = "7  семестр";
-            this.sevenSemester.UseVisualStyleBackColor = false;
-            // 
-            // eightSemester
-            // 
-            this.eightSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.eightSemester.Location = new System.Drawing.Point(459, 440);
-            this.eightSemester.Name = "eightSemester";
-            this.eightSemester.Size = new System.Drawing.Size(231, 64);
-            this.eightSemester.TabIndex = 18;
-            this.eightSemester.Text = "8 семестр";
-            this.eightSemester.UseVisualStyleBackColor = false;
-            // 
-            // secondSemester
-            // 
-            this.secondSemester.Location = new System.Drawing.Point(459, 168);
-            this.secondSemester.Name = "secondSemester";
-            this.secondSemester.Size = new System.Drawing.Size(231, 64);
-            this.secondSemester.TabIndex = 17;
-            this.secondSemester.Text = "2 семестр";
-            this.secondSemester.UseVisualStyleBackColor = true;
-            this.secondSemester.Click += new System.EventHandler(this.secondSemester_Click_1);
-            // 
-            // thirdSemester
-            // 
-            this.thirdSemester.Location = new System.Drawing.Point(67, 257);
-            this.thirdSemester.Name = "thirdSemester";
-            this.thirdSemester.Size = new System.Drawing.Size(231, 64);
-            this.thirdSemester.TabIndex = 16;
-            this.thirdSemester.Text = "3 семестр";
-            this.thirdSemester.UseVisualStyleBackColor = true;
-            this.thirdSemester.Click += new System.EventHandler(this.thirdSemester_Click_1);
-            // 
-            // fourSemester
-            // 
-            this.fourSemester.BackColor = System.Drawing.SystemColors.GrayText;
-            this.fourSemester.Location = new System.Drawing.Point(459, 257);
-            this.fourSemester.Name = "fourSemester";
-            this.fourSemester.Size = new System.Drawing.Size(231, 64);
-            this.fourSemester.TabIndex = 15;
-            this.fourSemester.Text = "4 семестр";
-            this.fourSemester.UseVisualStyleBackColor = false;
-            // 
-            // fiveSemester
-            // 
-            this.fiveSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.fiveSemester.Location = new System.Drawing.Point(67, 350);
-            this.fiveSemester.Name = "fiveSemester";
-            this.fiveSemester.Size = new System.Drawing.Size(231, 64);
-            this.fiveSemester.TabIndex = 14;
-            this.fiveSemester.Text = "5  семестр";
-            this.fiveSemester.UseVisualStyleBackColor = false;
-            // 
-            // sixSemester
-            // 
-            this.sixSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.sixSemester.Location = new System.Drawing.Point(459, 350);
-            this.sixSemester.Name = "sixSemester";
-            this.sixSemester.Size = new System.Drawing.Size(231, 64);
-            this.sixSemester.TabIndex = 13;
-            this.sixSemester.Text = "6 семестр";
-            this.sixSemester.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(19, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(746, 44);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Розрахунок рейтингового балу НТУ \"ХПI\"";
-            // 
-            // firstSemester
-            // 
-            this.firstSemester.Location = new System.Drawing.Point(67, 168);
-            this.firstSemester.Name = "firstSemester";
-            this.firstSemester.Size = new System.Drawing.Size(231, 64);
-            this.firstSemester.TabIndex = 11;
-            this.firstSemester.Text = "1 семестр";
-            this.firstSemester.UseVisualStyleBackColor = true;
-            this.firstSemester.Click += new System.EventHandler(this.firstSemester_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.sevenSemester);
-            this.Controls.Add(this.eightSemester);
-            this.Controls.Add(this.secondSemester);
-            this.Controls.Add(this.thirdSemester);
-            this.Controls.Add(this.fourSemester);
-            this.Controls.Add(this.fiveSemester);
-            this.Controls.Add(this.sixSemester);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.firstSemester);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button sevenSemester;
-        private System.Windows.Forms.Button eightSemester;
-        private System.Windows.Forms.Button secondSemester;
-        private System.Windows.Forms.Button thirdSemester;
-        private System.Windows.Forms.Button fourSemester;
-        private System.Windows.Forms.Button fiveSemester;
-        private System.Windows.Forms.Button sixSemester;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button firstSemester;
     }
 }
 
