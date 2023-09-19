@@ -53,16 +53,19 @@
             // sevenSemester
             // 
             this.sevenSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sevenSemester.Enabled = false;
             this.sevenSemester.Location = new System.Drawing.Point(67, 456);
             this.sevenSemester.Name = "sevenSemester";
             this.sevenSemester.Size = new System.Drawing.Size(231, 64);
             this.sevenSemester.TabIndex = 29;
             this.sevenSemester.Text = "7  семестр";
             this.sevenSemester.UseVisualStyleBackColor = false;
+            this.sevenSemester.Click += new System.EventHandler(this.sevenSemester_Click);
             // 
             // eightSemester
             // 
             this.eightSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.eightSemester.Enabled = false;
             this.eightSemester.Location = new System.Drawing.Point(459, 456);
             this.eightSemester.Name = "eightSemester";
             this.eightSemester.Size = new System.Drawing.Size(231, 64);
@@ -93,6 +96,7 @@
             // fourSemester
             // 
             this.fourSemester.BackColor = System.Drawing.SystemColors.GrayText;
+            this.fourSemester.Enabled = false;
             this.fourSemester.Location = new System.Drawing.Point(459, 273);
             this.fourSemester.Name = "fourSemester";
             this.fourSemester.Size = new System.Drawing.Size(231, 64);
@@ -103,6 +107,7 @@
             // fiveSemester
             // 
             this.fiveSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.fiveSemester.Enabled = false;
             this.fiveSemester.Location = new System.Drawing.Point(67, 366);
             this.fiveSemester.Name = "fiveSemester";
             this.fiveSemester.Size = new System.Drawing.Size(231, 64);
@@ -113,6 +118,7 @@
             // sixSemester
             // 
             this.sixSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sixSemester.Enabled = false;
             this.sixSemester.Location = new System.Drawing.Point(459, 366);
             this.sixSemester.Name = "sixSemester";
             this.sixSemester.Size = new System.Drawing.Size(231, 64);

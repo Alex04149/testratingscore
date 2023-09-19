@@ -37,5 +37,10 @@ namespace testratingscore
             thirdSemester form = new thirdSemester();   
             form.Show();
         }
+
+        private void sevenSemester_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
