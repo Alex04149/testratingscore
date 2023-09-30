@@ -38,6 +38,11 @@
             this.sixSemester = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.firstSemester = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.службовеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.проПрограмуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -52,8 +57,9 @@
             // 
             // sevenSemester
             // 
-            this.sevenSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sevenSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.sevenSemester.Enabled = false;
+            this.sevenSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.sevenSemester.Location = new System.Drawing.Point(67, 456);
             this.sevenSemester.Name = "sevenSemester";
             this.sevenSemester.Size = new System.Drawing.Size(231, 64);
@@ -64,8 +70,9 @@
             // 
             // eightSemester
             // 
-            this.eightSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.eightSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.eightSemester.Enabled = false;
+            this.eightSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.eightSemester.Location = new System.Drawing.Point(459, 456);
             this.eightSemester.Name = "eightSemester";
             this.eightSemester.Size = new System.Drawing.Size(231, 64);
@@ -75,28 +82,33 @@
             // 
             // secondSemester
             // 
+            this.secondSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.secondSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.secondSemester.Location = new System.Drawing.Point(459, 184);
             this.secondSemester.Name = "secondSemester";
             this.secondSemester.Size = new System.Drawing.Size(231, 64);
             this.secondSemester.TabIndex = 27;
             this.secondSemester.Text = "2 семестр";
-            this.secondSemester.UseVisualStyleBackColor = true;
+            this.secondSemester.UseVisualStyleBackColor = false;
             this.secondSemester.Click += new System.EventHandler(this.secondSemester_Click);
             // 
             // thirdSemester
             // 
+            this.thirdSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.thirdSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.thirdSemester.Location = new System.Drawing.Point(67, 273);
             this.thirdSemester.Name = "thirdSemester";
             this.thirdSemester.Size = new System.Drawing.Size(231, 64);
             this.thirdSemester.TabIndex = 26;
             this.thirdSemester.Text = "3 семестр";
-            this.thirdSemester.UseVisualStyleBackColor = true;
+            this.thirdSemester.UseVisualStyleBackColor = false;
             this.thirdSemester.Click += new System.EventHandler(this.thirdSemester_Click);
             // 
             // fourSemester
             // 
-            this.fourSemester.BackColor = System.Drawing.SystemColors.GrayText;
+            this.fourSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.fourSemester.Enabled = false;
+            this.fourSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fourSemester.Location = new System.Drawing.Point(459, 273);
             this.fourSemester.Name = "fourSemester";
             this.fourSemester.Size = new System.Drawing.Size(231, 64);
@@ -106,8 +118,9 @@
             // 
             // fiveSemester
             // 
-            this.fiveSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.fiveSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.fiveSemester.Enabled = false;
+            this.fiveSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fiveSemester.Location = new System.Drawing.Point(67, 366);
             this.fiveSemester.Name = "fiveSemester";
             this.fiveSemester.Size = new System.Drawing.Size(231, 64);
@@ -117,8 +130,9 @@
             // 
             // sixSemester
             // 
-            this.sixSemester.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sixSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.sixSemester.Enabled = false;
+            this.sixSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.sixSemester.Location = new System.Drawing.Point(459, 366);
             this.sixSemester.Name = "sixSemester";
             this.sixSemester.Size = new System.Drawing.Size(231, 64);
@@ -130,27 +144,61 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(19, 40);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(26, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(746, 44);
+            this.label1.Size = new System.Drawing.Size(749, 31);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Розрахунок рейтингового балу НТУ \"ХПI\"";
+            this.label1.Text = "Розрахунок стипендіального рейтингового балу НТУ \"ХПI\"";
             // 
             // firstSemester
             // 
+            this.firstSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.firstSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.firstSemester.Location = new System.Drawing.Point(67, 184);
             this.firstSemester.Name = "firstSemester";
             this.firstSemester.Size = new System.Drawing.Size(231, 64);
             this.firstSemester.TabIndex = 21;
             this.firstSemester.Text = "1 семестр";
-            this.firstSemester.UseVisualStyleBackColor = true;
+            this.firstSemester.UseVisualStyleBackColor = false;
             this.firstSemester.Click += new System.EventHandler(this.firstSemester_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.файлToolStripMenuItem,
+            this.службовеToolStripMenuItem,
+            this.проПрограмуToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.TabIndex = 31;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // файлToolStripMenuItem
+            // 
+            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.файлToolStripMenuItem.Text = "Файл";
+            // 
+            // службовеToolStripMenuItem
+            // 
+            this.службовеToolStripMenuItem.Name = "службовеToolStripMenuItem";
+            this.службовеToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.службовеToolStripMenuItem.Text = "Службове";
+            // 
+            // проПрограмуToolStripMenuItem
+            // 
+            this.проПрограмуToolStripMenuItem.Name = "проПрограмуToolStripMenuItem";
+            this.проПрограмуToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.проПрограмуToolStripMenuItem.Text = "Про програму";
+            this.проПрограмуToolStripMenuItem.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem_Click);
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.sevenSemester);
@@ -162,8 +210,15 @@
             this.Controls.Add(this.sixSemester);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.firstSemester);
+            this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "main";
-            this.Text = "main";
+            this.Text = "Розракхунеок стиппендіального рейтингового балу";
+            this.Load += new System.EventHandler(this.main_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.main_KeyPress);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +236,9 @@
         private System.Windows.Forms.Button sixSemester;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button firstSemester;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem службовеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem;
     }
 }

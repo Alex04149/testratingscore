@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace testratingscore
@@ -15,6 +8,7 @@ namespace testratingscore
         public main()
         {
             InitializeComponent();
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Escape) this.Close(); };
         }
 
         private void firstSemester_Click(object sender, EventArgs e)
@@ -39,6 +33,29 @@ namespace testratingscore
         }
 
         private void sevenSemester_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Це програма створена студентом 2-го курсу \n" +
+                "Шалімовим О.Є.\n" +
+                "Telegram для зв'язку та відгуків:@a_sanya_l");
+        
+        }
+
+        private void main_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void проПрограмуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void main_Load(object sender, EventArgs e)
         {
 
         }

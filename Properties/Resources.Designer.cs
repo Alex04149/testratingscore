@@ -63,6 +63,16 @@ namespace testratingscore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap national_technical_university_kharkiv_polytechnic_institute_logo {
+            get {
+                object obj = ResourceManager.GetObject("national-technical-university-kharkiv-polytechnic-institute-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OIP {
             get {
                 object obj = ResourceManager.GetObject("OIP", resourceCulture);

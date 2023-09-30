@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlTypes;
 using System.Windows.Forms;
 
 namespace testratingscore
@@ -100,22 +98,27 @@ namespace testratingscore
                 }
                 else
                 {
-                    MessageBox.Show("Введіть бал в діапазоні 0-100 з дисципліни" + name);
-                        score = int.MaxValue;
+                    MessageBox.Show("Введіть бал в діапазоні 0-100 з дисципліни <<" + name + ">>","Попередження!");
+                        score = int.MaxValue; 
                 }
             }
 
         }
         static public bool check(List<Subject> subjects)
         {
+            string subjectError = "";
             bool check = true;
             for (int i = 0; i < subjects.Count; i++)
             {
                 if (subjects[i].Score<0 || subjects[i].Score > 100)
                 {
                     check = false;
-                    MessageBox.Show("Введіть верні значення з предмету" + subjects[i].name);
+                    subjectError += ("\n" + subjects[i].name);
                 }
+            }
+            if (!check)
+            {
+                MessageBox.Show("Введіть бал в діапазоні 0-100 з дисципліни " + subjectError);
             }
             return check;
         }
@@ -133,7 +136,6 @@ namespace testratingscore
                 }
                 rating = (Subject.maxAssessmentOfDiscipline * sumScoreAndCoefficient) / (sumCoefficient * Subject.maxAssessmentOfRating);
                 return rating; 
-            
         }
         }
     }

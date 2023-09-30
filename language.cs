@@ -8,22 +8,21 @@ namespace testratingscore
 {
         public static class LanguageSubject
         {
-            public static string Math = "Вища математика";
-            public static string Physics = "Фізика";
-            public static string Informatics = "Інформатика";
-            public static string Grafics = "Інженерна графіка";
-            public static string ukrainianLanguage = "Українська мова";
-            public static string introductionToSpecialty = "Вступ до спеціальності";
-            public static string english = "Англійська";
-            public static string PE = "Фізкультура";
-            public static string history = "Історія України";
-            public static string theoryOfDigitalAutomata = "Теорія цифрових автоматів";
-            public static string ecology = "Екологія";
-            public static string electricalEngineeringAndElectromechanics = "Екектротехніка та електротехніка";
-            public static string informationTechnologyAndProgramming = "Інформаційні трехнології та програмування";
-            public static string phylosophy = "Філософія";
-            public static string appliedMechanics = "Прикладна механіка";
-
+            public static string Math = "вища математика";
+            public static string Physics = "фізика";
+            public static string Informatics = "інформатика";
+            public static string Grafics = "інженерна графіка";
+            public static string ukrainianLanguage = "українська мова";
+            public static string introductionToSpecialty = "вступ до спеціальності";
+            public static string english = "англійська";
+            public static string PE = "фізкультура";
+            public static string history = "історія України";
+            public static string theoryOfDigitalAutomata = "теорія цифрових автоматів";
+            public static string ecology = "екологія";
+            public static string electricalEngineeringAndElectromechanics = "електротехніка та електротехніка";
+            public static string informationTechnologyAndProgramming = "інформаційні трехнології та програмування";
+            public static string phylosophy = "філософія";
+            public static string appliedMechanics = "прикладна механіка";
         }
    
 }
