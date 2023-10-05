@@ -135,7 +135,7 @@ namespace testratingscore
                     sumCoefficient += subjects[i].Coefficient;
                 }
                 rating = (Subject.maxAssessmentOfDiscipline * sumScoreAndCoefficient) / (sumCoefficient * Subject.maxAssessmentOfRating);
-                return rating; 
+                return Math.Round(rating,2); 
         }
         static public void GetCoefficients(int semester)
         {
