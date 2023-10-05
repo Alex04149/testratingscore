@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.label2 = new System.Windows.Forms.Label();
             this.sevenSemester = new System.Windows.Forms.Button();
             this.eightSemester = new System.Windows.Forms.Button();
@@ -41,6 +42,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.службовеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.коефіцієнти1СеместруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.коефіцієнти1СеместруToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.коефіцієнти3СеместруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проПрограмуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +70,6 @@
             this.sevenSemester.TabIndex = 29;
             this.sevenSemester.Text = "7  семестр";
             this.sevenSemester.UseVisualStyleBackColor = false;
-            this.sevenSemester.Click += new System.EventHandler(this.sevenSemester_Click);
             // 
             // eightSemester
             // 
@@ -183,9 +186,34 @@
             // 
             // службовеToolStripMenuItem
             // 
+            this.службовеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.коефіцієнти1СеместруToolStripMenuItem,
+            this.коефіцієнти1СеместруToolStripMenuItem1,
+            this.коефіцієнти3СеместруToolStripMenuItem});
             this.службовеToolStripMenuItem.Name = "службовеToolStripMenuItem";
             this.службовеToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.службовеToolStripMenuItem.Text = "Службове";
+            // 
+            // коефіцієнти1СеместруToolStripMenuItem
+            // 
+            this.коефіцієнти1СеместруToolStripMenuItem.Name = "коефіцієнти1СеместруToolStripMenuItem";
+            this.коефіцієнти1СеместруToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.коефіцієнти1СеместруToolStripMenuItem.Text = "Коефіцієнти 1 семестру";
+            this.коефіцієнти1СеместруToolStripMenuItem.Click += new System.EventHandler(this.коефіцієнти1СеместруToolStripMenuItem_Click);
+            // 
+            // коефіцієнти1СеместруToolStripMenuItem1
+            // 
+            this.коефіцієнти1СеместруToolStripMenuItem1.Name = "коефіцієнти1СеместруToolStripMenuItem1";
+            this.коефіцієнти1СеместруToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
+            this.коефіцієнти1СеместруToolStripMenuItem1.Text = "Коефіцієнти 2 семестру";
+            this.коефіцієнти1СеместруToolStripMenuItem1.Click += new System.EventHandler(this.коефіцієнти1СеместруToolStripMenuItem1_Click);
+            // 
+            // коефіцієнти3СеместруToolStripMenuItem
+            // 
+            this.коефіцієнти3СеместруToolStripMenuItem.Name = "коефіцієнти3СеместруToolStripMenuItem";
+            this.коефіцієнти3СеместруToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.коефіцієнти3СеместруToolStripMenuItem.Text = "Коефіцієнти 3 семестру";
+            this.коефіцієнти3СеместруToolStripMenuItem.Click += new System.EventHandler(this.коефіцієнти3СеместруToolStripMenuItem_Click);
             // 
             // проПрограмуToolStripMenuItem
             // 
@@ -211,12 +239,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.firstSemester);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main";
             this.Text = "Розракхунеок стиппендіального рейтингового балу";
             this.Load += new System.EventHandler(this.main_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.main_KeyPress);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -240,5 +268,8 @@
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem службовеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem коефіцієнти1СеместруToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem коефіцієнти1СеместруToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem коефіцієнти3СеместруToolStripMenuItem;
     }
 }

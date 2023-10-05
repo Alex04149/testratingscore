@@ -22,7 +22,7 @@ namespace testratingscore
             {
                 try
                 {
-                    List<Subject> subjects = Subject.getSubject(2);
+                    var subjects = Subject.getSubject(2);
                     subjects[0].Score = int.Parse(higherMath.Text);
                     subjects[1].Score = int.Parse(physics.Text);
                     subjects[2].Score = int.Parse(informaticks.Text);
@@ -36,14 +36,24 @@ namespace testratingscore
                         double rating = Subject.Calc(subjects);
                         MessageBox.Show("Ваш рейтинговий бал у діапазоні (0-90)  = " + rating);
                     }
-                    //higherMath.Text = null;
-                    //physics.Text = null;
-                    //informaticks.Text = null;
-                    //TheoryOfDigitalAutomata.Text = null;
-                    //history.Text = null;
-                    //eco.Text = null;
-                    //english.Text = null;
-                    //pe.Text = null;
+                    higherMath.Text = null;
+                    physics.Text = null;
+                    informaticks.Text = null;
+                    TheoryOfDigitalAutomata.Text = null;
+                    history.Text = null;
+                    eco.Text = null;
+                    english.Text = null;
+                    pe.Text = null;
+
+                    higherMath.Enabled = false;
+                    physics.Enabled = false;
+                    informaticks.Enabled = false;
+                    history.Enabled = false;
+                    TheoryOfDigitalAutomata.Enabled = false;
+                    eco.Enabled = false;
+                    english.Enabled = false;
+                    pe.Enabled = false;
+                    Get.Text = "Почати знову";
                 }
                 catch
                 {
@@ -60,7 +70,8 @@ namespace testratingscore
                 eco.Enabled = true;
                 english.Enabled = true;
                 pe.Enabled = true;
-                Get.Text = "Розрахувати";
+                Get.Text = "Розрахувати"; 
+                higherMath.Focus();
             }
         }
 
@@ -84,8 +95,13 @@ namespace testratingscore
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form1 = new main();
+            var form1 = new firstSemester();
             form1.Show(); 
+        }
+
+        private void secondSemester_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

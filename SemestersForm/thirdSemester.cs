@@ -15,7 +15,7 @@ namespace testratingscore
         private void button1_Click(object sender, EventArgs e)
         {
              this.Hide();
-             main form1 = new main();
+             var form1 = new secondSemester();
              form1.Show();
         }
 
@@ -60,7 +60,18 @@ namespace testratingscore
                 programming.Text = null;
                 english.Text = null;
                 mechanics.Text = null; 
-                pe.Text = null; 
+                pe.Text = null;
+
+                higherMath.Enabled = false;
+                electtricalEngineering.Enabled = false;
+                physics.Enabled = false;
+                philosophy.Enabled = false;
+                programming.Enabled = false;
+                english.Enabled = false;
+                mechanics.Enabled = false;
+                pe.Enabled = false;
+                english.Enabled = false;
+                Get.Text = "Почати знов";
             }
             else
             {
@@ -74,7 +85,13 @@ namespace testratingscore
                 mechanics.Enabled = true;
                 pe.Enabled = true;
                 english.Enabled = true;
+                higherMath.Focus();
             }
+        }
+
+        private void thirdSemester_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

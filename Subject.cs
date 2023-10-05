@@ -11,7 +11,7 @@ namespace testratingscore
         public int Coefficient;
         public  string name { get; set; }
         public static List<Subject> getSubject(int semester)
-            {
+        {
                 List<Subject> subject = new List<Subject>();
                 subject.Add(new Subject());
                 switch (semester)
@@ -84,7 +84,7 @@ namespace testratingscore
                         break;
                 }
                 return subject;
-            }
+        }
             private int score;
             public int Score
             {
@@ -137,5 +137,16 @@ namespace testratingscore
                 rating = (Subject.maxAssessmentOfDiscipline * sumScoreAndCoefficient) / (sumCoefficient * Subject.maxAssessmentOfRating);
                 return rating; 
         }
+        static public void GetCoefficients(int semester)
+        {
+            var subjects = Subject.getSubject(semester);
+            string message = "Предмети семестру та їх коефіццієнти ";
+            foreach (Subject subject in subjects)
+            { 
+                message += "\n" + subject.name + "\t" + subject.Coefficient;
+            }
+            MessageBox.Show(message,"Коефіцієнти " + semester + " семестру");
         }
-    }
+        }
+}
+  

@@ -41,6 +41,16 @@ namespace testratingscore
                     vstup.Text = null;
                     english.Text = null;
                     pe.Text = null;
+
+                    higherMath.Enabled = false;
+                    physics.Enabled = false;
+                    informaticks.Enabled = false;
+                    narisna.Enabled = false;
+                    mova.Enabled = false;
+                    vstup.Enabled = false;
+                    english.Enabled = false;
+                    pe.Enabled = false;
+                    Get.Text = "Почати знову";
                 }
                 catch
                 {
@@ -58,10 +68,9 @@ namespace testratingscore
                 english.Enabled = true;
                 pe.Enabled = true;
                 Get.Text = "Розрахувати";
+                higherMath.Focus();
             }
         }
-
-
         private void higherMath_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
