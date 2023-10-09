@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 
 namespace testratingscore
 {
     public partial class secondSemester : Form
-    { 
+    {
 
         public string Symbol { get; private set; }
 
@@ -70,7 +69,7 @@ namespace testratingscore
                 eco.Enabled = true;
                 english.Enabled = true;
                 pe.Enabled = true;
-                Get.Text = "Розрахувати"; 
+                Get.Text = "Розрахувати";
                 higherMath.Focus();
             }
         }
@@ -84,9 +83,9 @@ namespace testratingscore
 
 
         private void higherMath_KeyPress(object sender, KeyPressEventArgs e)
-        { 
+        {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8 && number != 44) 
+            if (!Char.IsDigit(number) && number != 8 && number != 44)
             {
                 e.Handled = true;
             }
@@ -96,7 +95,7 @@ namespace testratingscore
         {
             this.Hide();
             var form1 = new firstSemester();
-            form1.Show(); 
+            form1.Show();
         }
 
         private void secondSemester_Load(object sender, EventArgs e)

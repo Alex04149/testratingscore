@@ -68,6 +68,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SemestersForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SemestersForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SemestersForm\secondSemester.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SemestersForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SemestersForm\secondSemester.resx">
       <DependentUpon>secondSemester.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,12 +11,12 @@ namespace testratingscore
             InitializeComponent();
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Escape) this.Close(); };
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
-             this.Hide();
-             var form1 = new secondSemester();
-             form1.Show();
+            this.Hide();
+            var form1 = new secondSemester();
+            form1.Show();
         }
 
         private void higherMath_KeyPress(object sender, KeyPressEventArgs e)
@@ -55,11 +55,11 @@ namespace testratingscore
                 }
                 higherMath.Text = null;
                 electtricalEngineering.Text = null;
-                physics.Text = null;    
+                physics.Text = null;
                 philosophy.Text = null;
                 programming.Text = null;
                 english.Text = null;
-                mechanics.Text = null; 
+                mechanics.Text = null;
                 pe.Text = null;
 
                 higherMath.Enabled = false;
@@ -78,7 +78,7 @@ namespace testratingscore
                 Get.Text = "Розрахувати";
                 higherMath.Enabled = true;
                 electtricalEngineering.Enabled = true;
-                physics.Enabled = true;   
+                physics.Enabled = true;
                 philosophy.Enabled = true;
                 programming.Enabled = true;
                 english.Enabled = true;

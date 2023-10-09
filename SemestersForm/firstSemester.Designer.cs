@@ -73,7 +73,7 @@
             // Get
             // 
             this.Get.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Get.Location = new System.Drawing.Point(272, 495);
+            this.Get.Location = new System.Drawing.Point(259, 493);
             this.Get.Name = "Get";
             this.Get.Size = new System.Drawing.Size(265, 41);
             this.Get.TabIndex = 82;
@@ -149,6 +149,7 @@
             this.higherMath.Name = "higherMath";
             this.higherMath.Size = new System.Drawing.Size(248, 29);
             this.higherMath.TabIndex = 75;
+            this.higherMath.TextChanged += new System.EventHandler(this.higherMath_TextChanged);
             this.higherMath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.higherMath_KeyPress);
             // 
             // label7
@@ -224,11 +225,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(643, 497);
+            this.button1.Location = new System.Drawing.Point(585, 497);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 39);
+            this.button1.Size = new System.Drawing.Size(184, 39);
             this.button1.TabIndex = 86;
-            this.button1.Text = "Вперед";
+            this.button1.Text = "До наступного семестру ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -237,9 +238,9 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(12, 495);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 41);
+            this.button2.Size = new System.Drawing.Size(163, 41);
             this.button2.TabIndex = 87;
-            this.button2.Text = "Назад";
+            this.button2.Text = "До головної";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -281,6 +282,7 @@
             this.KeyPreview = true;
             this.Name = "firstSemester";
             this.Text = "firstSemester";
+            this.Load += new System.EventHandler(this.firstSemester_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

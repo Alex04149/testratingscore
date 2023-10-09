@@ -27,7 +27,6 @@ namespace testratingscore
                     subjects[5].Score = int.Parse(vstup.Text);
                     subjects[6].Score = int.Parse(english.Text);
                     subjects[7].Score = int.Parse(pe.Text);
-                    Subject.check(subjects);
                     if (Subject.check(subjects))
                     {
                         double rating = Subject.Calc(subjects);
@@ -89,8 +88,18 @@ namespace testratingscore
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            main main = new main();
+            var main = new main();
             main.Show();
+        }
+
+        private void higherMath_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstSemester_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
