@@ -64,6 +64,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +89,7 @@
             // 
             // семестерToolStripMenuItem
             // 
+            this.семестерToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.семестерToolStripMenuItem.Name = "семестерToolStripMenuItem";
             this.семестерToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.семестерToolStripMenuItem.Text = "1 семестер ";
@@ -108,30 +111,35 @@
             // 
             // семестерToolStripMenuItem3
             // 
+            this.семестерToolStripMenuItem3.Enabled = false;
             this.семестерToolStripMenuItem3.Name = "семестерToolStripMenuItem3";
             this.семестерToolStripMenuItem3.Size = new System.Drawing.Size(79, 20);
             this.семестерToolStripMenuItem3.Text = "4 семестер";
             // 
             // семестерToolStripMenuItem4
             // 
+            this.семестерToolStripMenuItem4.Enabled = false;
             this.семестерToolStripMenuItem4.Name = "семестерToolStripMenuItem4";
             this.семестерToolStripMenuItem4.Size = new System.Drawing.Size(79, 20);
             this.семестерToolStripMenuItem4.Text = "5 семестер";
             // 
             // семестерToolStripMenuItem5
             // 
+            this.семестерToolStripMenuItem5.Enabled = false;
             this.семестерToolStripMenuItem5.Name = "семестерToolStripMenuItem5";
             this.семестерToolStripMenuItem5.Size = new System.Drawing.Size(79, 20);
             this.семестерToolStripMenuItem5.Text = "6 семестер";
             // 
             // семестерToolStripMenuItem6
             // 
+            this.семестерToolStripMenuItem6.Enabled = false;
             this.семестерToolStripMenuItem6.Name = "семестерToolStripMenuItem6";
             this.семестерToolStripMenuItem6.Size = new System.Drawing.Size(79, 20);
             this.семестерToolStripMenuItem6.Text = "7 семестер";
             // 
             // семестноToolStripMenuItem
             // 
+            this.семестноToolStripMenuItem.Enabled = false;
             this.семестноToolStripMenuItem.Name = "семестноToolStripMenuItem";
             this.семестноToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.семестноToolStripMenuItem.Text = "8 семестно";
@@ -159,21 +167,21 @@
             // семестрToolStripMenuItem
             // 
             this.семестрToolStripMenuItem.Name = "семестрToolStripMenuItem";
-            this.семестрToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.семестрToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.семестрToolStripMenuItem.Text = "1 семестр";
             this.семестрToolStripMenuItem.Click += new System.EventHandler(this.семестрToolStripMenuItem_Click);
             // 
             // семестрToolStripMenuItem1
             // 
             this.семестрToolStripMenuItem1.Name = "семестрToolStripMenuItem1";
-            this.семестрToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.семестрToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
             this.семестрToolStripMenuItem1.Text = "2 семестр";
             this.семестрToolStripMenuItem1.Click += new System.EventHandler(this.семестрToolStripMenuItem1_Click);
             // 
             // семестерToolStripMenuItem7
             // 
             this.семестерToolStripMenuItem7.Name = "семестерToolStripMenuItem7";
-            this.семестерToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.семестерToolStripMenuItem7.Size = new System.Drawing.Size(134, 22);
             this.семестерToolStripMenuItem7.Text = "3 семестер";
             this.семестерToolStripMenuItem7.Click += new System.EventHandler(this.семестерToolStripMenuItem7_Click);
             // 
@@ -189,7 +197,6 @@
             this.формулаToolStripMenuItem.Name = "формулаToolStripMenuItem";
             this.формулаToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.формулаToolStripMenuItem.Text = "Формула";
-            this.формулаToolStripMenuItem.Click += new System.EventHandler(this.формулаToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -399,11 +406,33 @@
             this.label10.TabIndex = 19;
             this.label10.Text = "Для роботи з застосунком згори виберіть певний пункт меню";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(30, 488);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(112, 43);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Назад";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(660, 488);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(112, 43);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Вперед";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.button1);
@@ -472,5 +501,7 @@
         private System.Windows.Forms.ToolStripMenuItem семестрToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem семестерToolStripMenuItem7;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

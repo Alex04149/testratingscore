@@ -139,15 +139,5 @@ namespace testratingscore
             rating = (Subject.maxAssessmentOfDiscipline * sumScoreAndCoefficient) / (sumCoefficient * Subject.maxAssessmentOfRating);
             return Math.Round(rating, 2);
         }
-        static public void GetCoefficients(int semester)
-        {
-            var subjects = Subject.getSubject(semester);
-            string message = "Предмети семестру та їх коефіццієнти ";
-            foreach (Subject subject in subjects)
-            {
-                message += "\n" + subject.name + "\t" + subject.Coefficient;
-            }
-            MessageBox.Show(message, "Коефіцієнти " + semester + " семестру");
         }
-    }
 }

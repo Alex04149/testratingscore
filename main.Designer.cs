@@ -70,12 +70,13 @@
             // eightSemester
             // 
             this.eightSemester.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.eightSemester.Enabled = false;
             this.eightSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.eightSemester.Location = new System.Drawing.Point(459, 456);
             this.eightSemester.Name = "eightSemester";
             this.eightSemester.Size = new System.Drawing.Size(231, 64);
             this.eightSemester.TabIndex = 28;
-            this.eightSemester.Text = "Тест";
+            this.eightSemester.Text = "8 семестр";
             this.eightSemester.UseVisualStyleBackColor = false;
             this.eightSemester.Click += new System.EventHandler(this.eightSemester_Click);
             // 
@@ -181,6 +182,7 @@
             // 
             // проПрограмуToolStripMenuItem
             // 
+            this.проПрограмуToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.проПрограмуToolStripMenuItem.Name = "проПрограмуToolStripMenuItem";
             this.проПрограмуToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.проПрограмуToolStripMenuItem.Text = "Про програму";
@@ -207,7 +209,7 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main";
-            this.Text = "Розракхунеок стиппендіального рейтингового балу";
+            this.Text = "Розрахунок рейтингового балу";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
