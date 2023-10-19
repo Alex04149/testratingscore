@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace testratingscore
 {
     public class Subject
     {
-        static private int quantity;
         public const double maxAssessmentOfDiscipline = 90.0;
         public const int maxAssessmentOfRating = 100;
         public int Coefficient;

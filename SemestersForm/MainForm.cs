@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
+using System.Security.Policy;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using System.Xml.Linq;
+
+
 
 namespace testratingscore.SemestersForm
 {
@@ -202,8 +204,7 @@ namespace testratingscore.SemestersForm
         }
 
         private void семестерToolStripMenuItem_Click(object sender, EventArgs e)
-        { 
-           
+        {
             semester = 1;
             createTbAndLabel(semester);
         }
@@ -282,8 +283,8 @@ namespace testratingscore.SemestersForm
         private void проПрограмуToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Це програма створена студентом 2-го курсу \n" +
-              "Шалімовим О.Є.\n" +
-              "Telegram для зв'язку та відгуків:@a_sanya_l", "Інформація про ПО");
+              "Шалімовим О.Є.\n"+
+              "Telegram: "  , "Інформація про ПО");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -329,5 +330,28 @@ namespace testratingscore.SemestersForm
             }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                using (var table = new ExcelAppload())
+                {
+                   if(table.Open(Path.Combine(Environment.CurrentDirectory, "Tb.xlxs")))
+                    {
+                        table.Set(colum: "A", row: 1, data: textBox1.Text);
+                        table.Set(colum: "B", row: 1, data: textBox2.Text);
+                        table.Set(colum: "C", row: 1, data: textBox3.Text);
+                        table.Set(colum: "D", row: 1, data: textBox4.Text);
+                        table.Save();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Файл не знайдено");
+                    }
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
     }
 }
