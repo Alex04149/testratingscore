@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
-using System.Security.Policy;
 using System.Windows.Forms;
 
 
@@ -225,28 +224,32 @@ namespace testratingscore.SemestersForm
         {
             if (button1.Text == "Розрахувати")
             {
-                var subjects = Subject.getSubject(semester);
-                subjects[0].Score = int.Parse(textBox1.Text);
-                subjects[1].Score = int.Parse(textBox2.Text);
-                subjects[2].Score = int.Parse(textBox3.Text);
-                subjects[3].Score = int.Parse(textBox4.Text);
-                subjects[4].Score = int.Parse(textBox5.Text);
-                subjects[5].Score = int.Parse(textBox6.Text);
-                subjects[6].Score = int.Parse(textBox7.Text);
-                subjects[7].Score = int.Parse(textBox8.Text);
-                if (Subject.check(subjects))
+                try
                 {
-                    double rating = Subject.Calc(subjects);
-                    MessageBox.Show("Ваш рейтинговий бал у діапазоні (0-90)  = " + rating, "Рейтинговий бал");
+                    var subjects = Subject.getSubject(semester);
+                    subjects[0].Score = int.Parse(textBox1.Text);
+                    subjects[1].Score = int.Parse(textBox2.Text);
+                    subjects[2].Score = int.Parse(textBox3.Text);
+                    subjects[3].Score = int.Parse(textBox4.Text);
+                    subjects[4].Score = int.Parse(textBox5.Text);
+                    subjects[5].Score = int.Parse(textBox6.Text);
+                    subjects[6].Score = int.Parse(textBox7.Text);
+                    subjects[7].Score = int.Parse(textBox8.Text);
+                    if (Subject.check(subjects))
+                    {
+                        double rating = Subject.Calc(subjects);
+                        MessageBox.Show("Ваш рейтинговий бал у діапазоні (0-90)  = " + rating, "Рейтинговий бал");
+                    }
+                    textBox1.Text = null;
+                    textBox2.Text = null;
+                    textBox3.Text = null;
+                    textBox4.Text = null;
+                    textBox5.Text = null;
+                    textBox6.Text = null;
+                    textBox7.Text = null;
+                    textBox8.Text = null;
                 }
-                textBox1.Text = null;
-                textBox2.Text = null;
-                textBox3.Text = null;
-                textBox4.Text = null;
-                textBox5.Text = null;
-                textBox6.Text = null;
-                textBox7.Text = null;
-                textBox8.Text = null;
+                catch { MessageBox.Show("Заповніть усі поля","Попередження");}
             }
             else
             {

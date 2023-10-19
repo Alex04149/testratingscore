@@ -48,5 +48,8 @@ namespace testratingscore
             this.Hide();
             var form = new MainForm();  
             form.Show();
-        }    }
+        }
+
+        
+    }
 }
