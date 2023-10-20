@@ -17,8 +17,8 @@ namespace testratingscore.SemestersForm
                 e.Handled = true;
             }
         }
-        
-        private bool info =false ;
+         
+        private bool info = false;
         private int semester = 0;
 
 
@@ -333,28 +333,5 @@ namespace testratingscore.SemestersForm
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                using (var table = new ExcelAppload())
-                {
-                   if(table.Open(Path.Combine(Environment.CurrentDirectory, "Tb.xlxs")))
-                    {
-                        table.Set(colum: "A", row: 1, data: textBox1.Text);
-                        table.Set(colum: "B", row: 1, data: textBox2.Text);
-                        table.Set(colum: "C", row: 1, data: textBox3.Text);
-                        table.Set(colum: "D", row: 1, data: textBox4.Text);
-                        table.Save();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Файл не знайдено");
-                    }
-                }
-            }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
-        }
     }
 }
