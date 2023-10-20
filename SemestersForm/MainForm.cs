@@ -333,5 +333,18 @@ namespace testratingscore.SemestersForm
             }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var subjects = Subject.getSubject(semester);
+            subjects[0].Score = int.Parse(textBox1.Text);
+            subjects[1].Score = int.Parse(textBox2.Text);
+            subjects[2].Score = int.Parse(textBox3.Text);
+            subjects[3].Score = int.Parse(textBox4.Text);
+            subjects[4].Score = int.Parse(textBox5.Text);
+            subjects[5].Score = int.Parse(textBox6.Text);
+            subjects[6].Score = int.Parse(textBox7.Text);
+            subjects[7].Score = int.Parse(textBox8.Text);
+            SaveData.Save_data(subjects);
+        }
     }
 }

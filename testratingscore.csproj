@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SaveData.cs" />
     <Compile Include="SemestersForm\firstSemester.cs">
       <SubType>Form</SubType>
     </Compile>
