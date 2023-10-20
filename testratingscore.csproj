@@ -47,38 +47,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="firstSemester.cs">
+    <Compile Include="SaveData.cs" />
+    <Compile Include="SemestersForm\firstSemester.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="firstSemester.Designer.cs">
+    <Compile Include="SemestersForm\firstSemester.Designer.cs">
       <DependentUpon>firstSemester.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="language.cs" />
+    <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="secondSemester.cs">
+    <Compile Include="SemestersForm\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="secondSemester.Designer.cs">
+    <Compile Include="SemestersForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SemestersForm\secondSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SemestersForm\secondSemester.Designer.cs">
       <DependentUpon>secondSemester.cs</DependentUpon>
     </Compile>
-    <Compile Include="Suubject.cs" />
-    <Compile Include="thirdSemester.cs">
+    <Compile Include="Subject.cs" />
+    <Compile Include="SemestersForm\thirdSemester.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="thirdSemester.Designer.cs">
+    <Compile Include="SemestersForm\thirdSemester.Designer.cs">
       <DependentUpon>thirdSemester.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="firstSemester.resx">
+    <EmbeddedResource Include="SemestersForm\firstSemester.resx">
       <DependentUpon>firstSemester.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,10 +98,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="secondSemester.resx">
+    <EmbeddedResource Include="SemestersForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SemestersForm\secondSemester.resx">
       <DependentUpon>secondSemester.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="thirdSemester.resx">
+    <EmbeddedResource Include="SemestersForm\thirdSemester.resx">
       <DependentUpon>thirdSemester.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -111,6 +122,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\national-technical-university-kharkiv-polytechnic-institute-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
